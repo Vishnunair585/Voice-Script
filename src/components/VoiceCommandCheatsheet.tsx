@@ -35,7 +35,7 @@ export interface MathFormulaExample {
   category: "algebra" | "calculus" | "symbols" | "chemistry" | "physics";
 }
 
-const MATH_FORMULA_SHEET: MathFormulaExample[] = [
+export const MATH_FORMULA_SHEET: MathFormulaExample[] = [
   {
     title: "Fractions & Quotients",
     spokenPhrase: '"fraction a over b" or "fraction 1 over 2"',
@@ -110,7 +110,7 @@ const MATH_FORMULA_SHEET: MathFormulaExample[] = [
   },
 ];
 
-const SCRIBING_COMMANDS: VoiceCommandItem[] = [
+export const SCRIBING_COMMANDS: VoiceCommandItem[] = [
   {
     phrase: "previous page",
     alternatives: ["back page", "go to previous page", "prior page", "previous sheet"],
@@ -201,7 +201,7 @@ const SCRIBING_COMMANDS: VoiceCommandItem[] = [
   },
 ];
 
-const ANSWERING_COMMANDS: VoiceCommandItem[] = [
+export const ANSWERING_COMMANDS: VoiceCommandItem[] = [
   {
     phrase: "move to next page",
     alternatives: ["next page", "next question", "move to next question", "go to next page"],
@@ -290,8 +290,6 @@ const ANSWERING_COMMANDS: VoiceCommandItem[] = [
     exampleSpeech: "review exam",
   },
 ];
-
-export { MATH_FORMULA_SHEET, SCRIBING_COMMANDS, ANSWERING_COMMANDS };
 
 interface VoiceCommandCheatsheetProps {
   mode: "scribing" | "answering";
